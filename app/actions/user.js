@@ -6,6 +6,12 @@ export function setUserObject(user) {
 		payload: user
 	}
 }
+export function setUsername(username) {
+	return {
+		type: types.SET_USERNAME,
+		payload: username
+	}
+}
 /*async example
 export function click(id){
 	return (dispatch, getState) => {
