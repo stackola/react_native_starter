@@ -24,7 +24,7 @@ import thunkMiddleware from 'redux-thunk';
 import {
   createLogger
 } from 'redux-logger';
-import {persistStore, autoRehydrate} from 'redux-persist'
+
 
 import reducer from './app/reducers';
 //import AppContainer from './app/containers/AppContainer.js'
@@ -44,7 +44,6 @@ function configureStore(initialState) {
 }
 
 const store = configureStore({});
-persistStore(store, {storage: AsyncStorage});
 
 const react_native_starter = () => (
   <Provider store={store}>

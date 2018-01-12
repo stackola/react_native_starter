@@ -6,16 +6,17 @@ export function setUserObject(user) {
 		payload: user
 	}
 }
+/*async example
 export function click(id){
 	return (dispatch, getState) => {
 		let state=getState();
 		
 		state.socket.socket.get('/user/click/14', function(body, jwr){
-			console.log(body);
-			console.log("-------------");
+			dispatch(setUserObject(body));
 		} );
 	}
 }
+
 export function getUser(id) {
 	return (dispatch, getState) => {
 		console.log("getting user");
@@ -29,3 +30,5 @@ export function getUser(id) {
 			}).catch((error) => console.log("error", error));
 	}
 }
+
+*/

@@ -4,9 +4,7 @@ import * as types from '../actions/types';
 import {
 	combineReducers
 } from 'redux';
-import {
-	REHYDRATE
-} from 'redux-persist/constants'
+
 
 export const user = createReducer({username:"no"}, {
 	[types.SET_USER_OBJECT](state, action) {
